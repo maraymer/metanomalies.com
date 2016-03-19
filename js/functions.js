@@ -43,7 +43,7 @@
 			return;
 		}
 
-		button.on( 'click.twentyfifteen', function() {
+		button.on( 'click.metanomalies', function() {
 			secondary.toggleClass( 'toggled-on' );
 			secondary.trigger( 'resize' );
 			$( this ).toggleClass( 'toggled-on' );
@@ -114,8 +114,8 @@
 		adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
 
 		$window
-			.on( 'scroll.twentyfifteen', scroll )
-			.on( 'resize.twentyfifteen', function() {
+			.on( 'scroll.metanomalies', scroll )
+			.on( 'resize.metanomalies', function() {
 				clearTimeout( resizeTimer );
 				resizeTimer = setTimeout( resizeAndScroll, 500 );
 			} );

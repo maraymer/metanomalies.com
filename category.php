@@ -2,10 +2,22 @@
 /**
  * The main template file
  *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * e.g., it puts together the home page when no home.php file exists.
  *
+ * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ *
+ * @package WordPress
+ * @subpackage Metanomalies
+ * @since Metanomalies 1.0
  */
 
 get_header(); 
+
+$categories = get_the_category();
+$category = $categories[0];
 ?>
 
 <!-- CONTENT -->
@@ -15,10 +27,18 @@ get_header();
 	<article id="Main">
 	<div class="wrapper">
 		<!-- LATEST ARTICLES -->
-		<section class="block articles latest">
+		<section class="block articles">
+			<h2 class="title">
+				<?php echo $category->category_count?> 
+				<?php if ($category->category_count == 1) { echo 'article'; } else { echo 'articles'; } ?> 
+				in <strong><?php single_cat_title( '', true ); ?></strong>
+			</h2>
 			<ul class="articles">
 				<?php
-					$args = array( 'numberposts' => '110', 'post_status' => 'publish' );
+					$args = array( 
+						'numberposts' => '21',
+						'category' => $category->cat_ID
+					);
 					$recent_posts = wp_get_recent_posts( $args );
 					
 					$featured_ctr = 0;
@@ -44,7 +64,7 @@ get_header();
 										$thumb_url = $thumb['0'];
 										?>
 										<!-- featured image -->
-										<a class="photo" href="<?php the_permalink() ?>">
+										<a class="photo" href="<?php echo $thumb_url?>">
 										<?php
 											the_post_thumbnail( 'large' );
 										?>
@@ -87,7 +107,7 @@ get_header();
 										$thumb_url = $thumb['0'];
 										?>
 										<!-- featured image -->
-										<a class="photo" href="<?php echo the_permalink() ?>">
+										<a class="photo" href="<?php echo $thumb_url?>">
 										<?php
 											the_post_thumbnail( 'medium' );
 										?>

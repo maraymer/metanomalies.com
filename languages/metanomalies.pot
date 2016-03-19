@@ -2,8 +2,8 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twenty Fifteen 1.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/twentyfifteen\n"
+"Project-Id-Version: Metanomalies 1.0\n"
+"Report-Msgid-Bugs-To: http://www.anomalistdesign.com\n"
 "POT-Creation-Date: 2014-12-14 12:26:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,7 +87,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.0)  #-#-#-#-#
+#. #-#-#-#-#  metanomalies.pot (Metanomalies 1.0)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
@@ -178,7 +178,7 @@ msgstr ""
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
 msgid ""
-"Twenty Fifteen requires at least WordPress version 4.1. You are running "
+"Metanomalies requires at least WordPress version 4.1. You are running "
 "version %s. Please upgrade and try again."
 msgstr ""
 
@@ -306,17 +306,17 @@ msgid "Previous post:"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Twenty Fifteen"
+msgid "Metanomalies"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentyfifteen"
+msgid "https://wordpress.org/themes/metanomalies"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
 "Our 2015 default theme is clean, blog-focused, and designed for clarity. "
-"Twenty Fifteen's simple, straightforward typography is readable on a wide "
+"Metanomalies's simple, straightforward typography is readable on a wide "
 "variety of screen sizes, and suitable for multiple languages. We designed it "
 "using a mobile-first approach, meaning your content takes center-stage, "
 "regardless of whether your visitors arrive by smartphone, tablet, laptop, or "

@@ -2,9 +2,6 @@
 /**
  * The template for displaying search results pages.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
  */
 
 get_header(); ?>
@@ -16,7 +13,7 @@ get_header(); ?>
 		<article id="Main">
 		<div class="wrapper">
 			<form role="search" method="get" class="search" action="<?php echo site_url(); ?>">
-				<input type="search" class="text" placeholder="Search …" value="<?php printf( __( '%s', 'twentyfifteen' ), get_search_query() ); ?>" name="s" title="Search for: <?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?>">
+				<input type="search" class="text" placeholder="Search …" value="<?php printf( __( '%s', 'metanomalies' ), get_search_query() ); ?>" name="s" title="Search for: <?php printf( __( 'Search Results for: %s', 'metanomalies' ), get_search_query() ); ?>">
 				<input type="submit" class="submit" value="&#xf002;">
 			</form>
 			
@@ -35,7 +32,7 @@ get_header(); ?>
 							_e('matches'); 
 							wp_reset_query(); 
 						?> 
-						found for <strong>&ldquo;<?php printf( __( '%s', 'twentyfifteen' ), get_search_query() ); ?>&rdquo;</strong>
+						found for <strong>&ldquo;<?php printf( __( '%s', 'metanomalies' ), get_search_query() ); ?>&rdquo;</strong>
 					</h2>
 					
 					<ul class="results">

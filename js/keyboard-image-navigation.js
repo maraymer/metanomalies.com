@@ -1,9 +1,9 @@
 /**
- * Twenty Fifteen keyboard support for image navigation.
+ * Metanomalies keyboard support for image navigation.
  */
 
 ( function( $ ) {
-	$( document ).on( 'keydown.twentyfifteen', function( e ) {
+	$( document ).on( 'keydown.metanomalies', function( e ) {
 		var url = false;
 
 		// Left arrow key code.

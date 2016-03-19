@@ -4,9 +4,6 @@
  *
  * Contains the closing of the "site-content" div and all content after.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
  */
 ?>
 
@@ -17,7 +14,7 @@
 	
 	<div class="summary"><strong>Metanomalies</strong> is a project of <a href="http://www.anomalistdesign.com/">Anomalist Design LLC</a> promoting the growth of communities of all types for all human beings.</div>
 	
-	<small class="copyright">&copy; 2015 <a href="http://anomalistdesign.com">Anomalist Design</a>. All rights reserved.</small>
+	<small class="copyright">&copy; <?= date('Y') ?>&nbsp;<a href="http://anomalistdesign.com">Anomalist Design</a>. All rights reserved.</small>
 </div>
 </footer>
 <!-- /FOOTER -->
